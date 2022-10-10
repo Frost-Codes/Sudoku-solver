@@ -8,7 +8,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from core import solve_puzzle
 
 
-
 @contextmanager
 def timer():
     t = time()
@@ -62,5 +61,3 @@ with timer():
 with timer():
     thread_solved = thread_batch_solve(puzzles_to_solve)
     print(thread_solved)
-
-
